@@ -9,5 +9,6 @@ connection = new Sequilize(dbConfig);
 User.init(connection);
 Address.init(connection);
 
+Address.associate(connection.models);
 
 module.exports = connection;

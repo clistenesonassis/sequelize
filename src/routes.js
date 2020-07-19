@@ -1,12 +1,12 @@
 const express = require("express");
 
-const User = require('./controllers/UserController');
-const Address = require('./controllers/AddressController');
+const User = require("./controllers/UserController");
+const Address = require("./controllers/AddressController");
 
 const routes = express.Router();
 
 routes.get("/", (req, res) => {
-    return res.json({ hello: "LOOOP" });
+  return res.json({ hello: "LOOOP" });
 });
 
 routes.post("/users", User.store);
